@@ -4,8 +4,8 @@ import images from "../../constants/images";
 const Header = () => {
   return (
     <header className="header">
-      <nav className="header__navbar">
-        <div className="header__navbar__logo-container">
+      <nav className="header__navbar flex-center">
+        <div className="header__navbar__logo-container flex-center">
           <img
             src={images.Logo}
             alt="Logo"
@@ -14,7 +14,7 @@ const Header = () => {
           <span>Dashboard</span>
         </div>
         <div className="header__navbar__list-container">
-          <ul className="header__navbar__list-container__list">
+          <ul className="header__navbar__list-container__list flex-center">
             <li className="header__navbar__list-container-list-item">
               <a
                 href="#home"

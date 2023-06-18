@@ -20,4 +20,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+}
+
+/* Utility Classes */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Font sizes */
+
+@media (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1366px) {
+  html {
+    font-size: 13px;
+  }
 }
