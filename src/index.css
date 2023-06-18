@@ -9,7 +9,15 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --ten-percent-color: #A8E890;
-  --thirty-percent-color: #749F82;
-  --sixty-percent-color: #425F57;
+  --ten-percent-color: #a8e890;
+  --thirty-percent-color: #749f82;
+  --sixty-percent-color: #425f57;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
