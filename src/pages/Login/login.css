@@ -1,0 +1,42 @@
+.login {
+  padding: 2rem;
+  /* border: 1px solid var(--ten-percent-color); */
+  background-color: var(--sixty-percent-color);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.login__container h1 {
+  font-size: 2.5rem;
+  color: var(--ten-percent-color);
+}
+
+.login__container__form__input-container {
+  margin: 1rem 0;
+}
+
+.login__container__form__input-container input {
+  padding: 0.5rem 1rem;
+  display: block;
+  outline: none;
+  border: 1px solid var(--ten-percent-color);
+  background-color: transparent;
+  color: var(--ten-percent-color);
+}
+
+.login__container__form__input-container input::placeholder {
+  color: var(--ten-percent-color);
+}
+
+.login__container__form__input-container button{
+    all: unset;
+    background-color: var(--ten-percent-color);
+    color: var(--sixty-percent-color);
+    display: block;
+    /* width: 100%; */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+}

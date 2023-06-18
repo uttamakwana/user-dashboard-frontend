@@ -5,8 +5,7 @@
   background-color: var(--ten-percent-color);
   align-items: flex-start !important;
   padding: 1rem;
-  height: 85%;
-  top: 15%;
+  height: 90%;
 }
 
 .sidebar__container {
@@ -42,7 +41,6 @@
 @media (max-width: 800px) {
   .sidebar {
     height: 88%;
-    top: 12%;
     width: 20%;
     padding: 0.5rem;
   }
@@ -62,5 +60,6 @@
 
   .sidebar.active {
     top: 12%;
+    z-index: 2;
   }
 }

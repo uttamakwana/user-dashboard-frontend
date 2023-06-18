@@ -1,0 +1,18 @@
+.contact {
+  position: fixed;
+  left: 18%;
+  width: 82%;
+  background-color: var(--thirty-percent-color);
+  height: 90%;
+  padding: 1rem;
+}
+
+.contact__button{
+    all: unset;
+    border: 1px solid var(--ten-percent-color);
+    background-color: var(--ten-percent-color);
+    padding: .5rem 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+

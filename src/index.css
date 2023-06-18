@@ -32,6 +32,13 @@
   align-items: center;
 }
 
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Font sizes */
 
 @media (max-width: 400px) {
