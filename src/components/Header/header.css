@@ -5,6 +5,7 @@
   background-color: var(--sixty-percent-color);
   width: 100%;
   padding: 0.5rem;
+  height: 15%;
 }
 
 .header__navbar {
@@ -32,7 +33,14 @@
   width: 40px;
 }
 
+#toogle-menu {
+  display: none;
+}
+
 @media (max-width: 800px) {
+  .header {
+    height: 12%;
+  }
   .header__navbar {
     justify-content: space-between !important;
     padding: 0 1rem;
@@ -48,6 +56,16 @@
 }
 
 @media (max-width: 450px) {
+  .header {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+
+  .header__navbar{
+    width: 100%;
+  }
+
   #header__navbar__logo-container__logo {
     height: 45px;
     width: 45px;
@@ -56,5 +74,11 @@
   .header__navbar__list-container__list__item__link img {
     height: 20px;
     width: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  #toogle-menu {
+    display: block;
   }
 }

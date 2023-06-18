@@ -1,40 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import "./sidebar.css";
+import { Context } from "../../context/ContextProvider";
 
 const Sidebar = () => {
-  const [headerHeight, setHeaderHeight] = useState(
-    document.querySelector(".header")
-      ? document.querySelector(".header").offsetHeight
-      : 0
-  );
-  const [sidebarHeight, setSidebarHeight] = useState(0);
-  useEffect(() => {
-    const handleSidebarHeight = () => {
-      setHeaderHeight(document.querySelector(".header").offsetHeight);
-      console.log("Screen size", window.innerHeight);
-      console.log("Header size", headerHeight);
-      let screenHeight = window.innerHeight;
-      setSidebarHeight(screenHeight - headerHeight);
-    };
-
-    handleSidebarHeight();
-
-    window.addEventListener("resize", handleSidebarHeight);
-
-    return () => {
-      window.removeEventListener("resize", handleSidebarHeight);
-    };
-  }, []);
-
-  console.log(sidebarHeight);
-  console.log(headerHeight);
+  const { activeToggle } = useContext(Context);
   return (
     <aside
-      className="sidebar flex-center"
-      style={{
-        height: sidebarHeight,
-        top: headerHeight,
-      }}
+      className={`sidebar flex-center ${activeToggle ? "active" : ""}`}
     >
       <div className="sidebar__container flex-center">
         <ul className="sidebar__container__list">
